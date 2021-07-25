@@ -110,3 +110,13 @@ def null_up (list):
             list[i][j+i] = 0;
     return list
 print(null_up(matrix))
+
+#10) Обнулить все элементы ниже главной диагонали
+print('10)')
+def null_down(list):
+    for i in range(1, m):
+        for j in range(i):
+            list[i][j] = 0;
+    print(list)
+
+null_down(matrix)
