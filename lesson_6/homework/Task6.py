@@ -33,3 +33,13 @@ def min_element (list):
                 min = j
     return min
 print('3) Минимальный элемени - ',min_element(matrix))
+
+#4) Сумма всех элементов матрицы
+def sum (list):
+    sum = 0
+    for i in list:
+        for j in i:
+            sum +=j
+    return sum
+
+print('4) Сумма элементов - ', sum(matrix))
