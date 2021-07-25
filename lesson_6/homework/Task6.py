@@ -85,3 +85,17 @@ def row_index_min_sum (list):
                 row_index = i
     return row_index + 1
 print('5) Ряд с минимальной суммой - ', row_index_min_sum(matrix))
+
+#8) Индекс столбца с минимальнйо суммой
+def col_index_min_sum(list):
+        total = 100000000
+        col_index = 0
+        for i in range(n):
+            sum = 0
+
+            for j in range(m):
+                sum += int(list[j][i])
+                if sum < total:
+                    total = sum
+                    col_index = i
+        return col_index + 1
