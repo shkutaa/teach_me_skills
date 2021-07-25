@@ -99,3 +99,14 @@ def col_index_min_sum(list):
                     total = sum
                     col_index = i
         return col_index + 1
+
+print('6) Столбец с минимальной суммой - ', col_index_min_sum(matrix))
+
+#9) Обнулить все элементы выше главной диагонали
+print('9)')
+def null_up (list):
+    for i in range(m):
+        for j in range(1,n-i):
+            list[i][j+i] = 0;
+    return list
+print(null_up(matrix))
