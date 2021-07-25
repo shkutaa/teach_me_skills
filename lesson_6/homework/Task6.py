@@ -57,3 +57,16 @@ def row_index_sum (list):
                 row_index = i
     return row_index + 1
 print('5) Ряд с максимальной суммой - ', row_index_sum(matrix))
+
+#6) Индекс колонки с максимальной суммой
+def col_index_sum(list):
+    total = 0
+    col_index = 0
+    for i in range(n):
+        sum = 0
+        for j in range(m):
+            sum += int(list[j][i])
+            if sum > total:
+                total = sum
+                col_index = i
+    return col_index + 1
