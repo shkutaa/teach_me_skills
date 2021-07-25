@@ -14,3 +14,12 @@ for i in range(m):
         print(matrix[i][j],end =' ')
     print(' ')
 
+#2) Максимальный элемент
+def max_element (list):
+    max = 0
+    for i in list:
+        for j in i:
+            if j > max:
+                max = j
+    return max
+print('2) Максимальный элемент - ', max_element(matrix))
