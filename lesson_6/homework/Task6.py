@@ -43,3 +43,17 @@ def sum (list):
     return sum
 
 print('4) Сумма элементов - ', sum(matrix))
+
+#5) Индекс ряда с максимальной суммой
+def row_index_sum (list):
+    total = 0
+    row_index = 0
+    for i in range(m):
+        sum = 0
+        for j in range(n):
+            sum += int(list[i][j])
+            if sum > total:
+                total = sum
+                row_index = i
+    return row_index + 1
+print('5) Ряд с максимальной суммой - ', row_index_sum(matrix))
