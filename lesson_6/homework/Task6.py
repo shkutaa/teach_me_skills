@@ -70,3 +70,18 @@ def col_index_sum(list):
                 total = sum
                 col_index = i
     return col_index + 1
+print('5) Столбец с максимальной суммой - ', col_index_sum(matrix))
+
+#7) Индекс ряда с минимальнйо суммой
+def row_index_min_sum (list):
+    total = 10000000
+    row_index = 0
+    for i in range(m):
+        sum = 0
+        for j in range(n):
+            sum += int(list[i][j])
+            if sum < total:
+                total = sum
+                row_index = i
+    return row_index + 1
+print('5) Ряд с минимальной суммой - ', row_index_min_sum(matrix))
