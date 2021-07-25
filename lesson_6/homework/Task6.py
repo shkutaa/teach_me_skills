@@ -23,3 +23,13 @@ def max_element (list):
                 max = j
     return max
 print('2) Максимальный элемент - ', max_element(matrix))
+
+#3) Минимальный элемент
+def min_element (list):
+    min = b
+    for i in matrix:
+        for j in i:
+            if j < min:
+                min = j
+    return min
+print('3) Минимальный элемени - ',min_element(matrix))
