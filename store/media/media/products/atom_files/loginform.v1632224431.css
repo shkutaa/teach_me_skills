@@ -1,0 +1,25 @@
+.login-form .lbl, .login-form
+.inputs{float:left}#login-panel{position:relative;padding:5px
+10px 8px}#login-panel
+.help{position:absolute;left:81%;top:5px;margin-left:50px;color:#818181}#overlay-login{position:fixed;z-index:99;left:0;top:0;width:100%;height:100%;background-color:#000;-moz-opacity:0.5;opacity:0.5;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50)}#modal_form_contents{position:fixed;z-index:999;top:50%;margin-top:-135px;left:50%;margin-left:-230px;width:461px}#modal_container{padding:10px;background:url(/img/bgLogin.v1632224431.png)}.login-tabs{position:relative;zoom:1;padding-left:10px}.login-tabs
+dd{float:left;position:relative;z-index:91;margin-bottom:-10px;height:30px;background:#bbd6bb url(/img/bgLtabs.v1632224431.gif) repeat-x 0 0;line-height:30px;margin-right:3px}.login-tabs .l-tab-1{width:83px}.login-tabs .l-tab-2{width:119px}.login-tabs
+a{color:#066 !important}.login-tabs
+.selected{background-image:none;background-color:#eef3ee;font-weight:bold}.login-tabs .selected
+a{text-decoration:none}.login-tabs .png-i{position:absolute;z-index:9;top:-10px;left:0;width:225px;height:30px;background:url(/img/bgLogin.v1632224431.png)}.login-form{position:relative;padding:23px
+0 12px;background-color:#eef3ee;text-align:left}.login-form p.desc-txt{position:relative;margin-top:-5px;padding-bottom:7px}.login-form .close, .popupbonus
+.close{position:absolute;right:7px;top:7px;cursor:pointer;cursor:hand;z-index:1}.login-form
+.cfix{}.login-form
+.lbl{width:66px;text-align:right;padding-top:3px;margin-right:10px}.login-form
+.inputs{width:265px;padding-bottom:7px}.login-form .inputs
+.inp{border-color:#a5acb2}.login-form .inputs .inp input:focus{cursor:text}.login-form
+.forgot{padding-left:16px;padding-top:3px}.login-form
+p{position:relative;padding-left:76px;vertical-align:middle;text-align:left}.login-form p label, .login-form p
+input{vertical-align:middle}.login-btn{background-color:#d9ecd9;padding:10px
+0 10px 76px;text-align:left}.login-btn
+input{width:91px;height:23px}#l-tab-2{position:relative;width:auto;margin:0
+!important;padding:0
+!important}#l-tab-2 .login-btn
+input{width:171px}#l-tab-2 p, #l-tab-2 .login-btn{padding-left:30px}#l-tab-2
+.inputs{position:relative;left:30px;float:none;width:90%}#l-tab-2 .desc-txt{margin-top:0;padding:1px
+10px 8px 30px}#l-tab-2
+.f10{padding-bottom:4px}

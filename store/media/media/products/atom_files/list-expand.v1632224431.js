@@ -1,0 +1,1 @@
+jQuery(function($){var $button=$('.b-tile__expand');$button.on('click',function(){var $target=$(this);$target.siblings('.b-tile__minimized').removeClass('b-tile__minimized');$target.remove();});});;

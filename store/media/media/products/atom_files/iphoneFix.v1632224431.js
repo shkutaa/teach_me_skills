@@ -1,0 +1,1 @@
+(function(){if(navigator.userAgent.match(/iPhone|iPad/i)){document.documentElement.classList.add('html_ios');}}());;

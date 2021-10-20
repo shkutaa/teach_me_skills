@@ -1,0 +1,1 @@
+(function(){if(/constructor/i.test(window.HTMLElement)){document.documentElement.classList.add('html_safari');}}());;

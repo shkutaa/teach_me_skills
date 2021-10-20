@@ -1,0 +1,1 @@
+jQuery(function($){var goodsScroll={params:{},init:function($els){var params=this.params;params.$scrollers=$els;params.$scrollers.each(function(index,item){goodsScroll.initScrollbars(item);});},initScrollbars:function(item){$(item).perfectScrollbar({wheelPropagation:false,useKeyboard:false});}};goodsScroll.init($('.b-product-title__dropdown'));});;

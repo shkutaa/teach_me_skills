@@ -1,0 +1,2 @@
+jQuery(function($){var $upBtn=$('.up-btn');if($upBtn.length){var screenHeight=$(window).height();var offsetFromTop=$upBtn.offset().top;if(offsetFromTop>screenHeight){$upBtn.addClass('up-btn_visible');}
+$upBtn.on('click',function(){$('html, body').animate({scrollTop:0},300);return false;});}}(jQuery));;

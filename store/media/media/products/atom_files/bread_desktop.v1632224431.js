@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){jQuery(".breadcrumbs__list").breadcrumbs({itemsSelector:'.breadcrumbs__list__li',resize:true});});;

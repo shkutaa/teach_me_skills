@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for category in categories %}
+    {{ category.name }}
+{% endfor %}
+
+<br><br>
+
+<h2>Доступные категории</h2>
+<a href="/books/">Книги</a>
+
+{% for category in categories %}
+    <li {% if category.slug == request_category.slug %}
+        style = "color:red; text-decoration: bold"
+        {%endif%}
+      >
+        <a href="{{category.get_absolute_url}}">{{ category.name}}</a>
+    </li>
+{% endfor %}
+
+{% for book in books %}
+<a href="{{ book.get_absolute_url }}">{{book.title}}</a>
+    {{ book.author}}
+    <img src="{{ book.image.url }}" height="400" width="300">
+{% endfor %}
+
+{% endblock content%}

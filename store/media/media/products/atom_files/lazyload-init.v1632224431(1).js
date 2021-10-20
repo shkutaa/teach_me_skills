@@ -1,0 +1,1 @@
+jQuery(function($){var hasImagesToLoad=document.querySelector('img.lazy');if(hasImagesToLoad){var containers=document.querySelectorAll('.b-gallery__scroller'),lazyInstances=[];[].forEach.call(containers,function(item){lazyInstances.push(new LazyLoad({container:item,elements_selector:"img.lazy",show_while_loading:true}));});}});;

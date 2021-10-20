@@ -1,0 +1,11 @@
+jQuery(function($){$(document).ready(function(){$(".add-set-to-cart").click(function(e){e.preventDefault();var $this=$(this);$this.addClass('i-button_processing')
+var $form=$("#goods-set-form");$.post('/goods/ajax/add_goodsset_in_box.php',{id:$form.find("input[name=id]").val()},function(data){if(data.added){$('.goods-items-popup').removeClass('goods-items-popup_visible');var $goodsPopup=$this.closest('.b-product-control__row').find('.goods-items-popup');if($goodsPopup.length){$goodsPopup.addClass('goods-items-popup_visible');$goodsPopup.find('.goods-items-popup__close').on('click',function(){$goodsPopup.removeClass('goods-items-popup_visible');});}
+$this.addClass('b-product-control__button_hidden').remove();$(".added-set-to-cart").removeClass("b-product-control__button_hidden").removeClass("b-product-control__state-button");$('.first-button').addClass('b-product-control__button_hidden').remove();$('.second-button').removeClass('b-product-control__button_hidden').removeClass('b-product-control__state-button');if(data.basket>0){$('.top-panel__userbar__cart__item span.top-panel__userbar__cart__count').html(data.basket).css('display','inline-block');if($('.footer-full .cartCounter').length){$('.footer-full .cartCounter').html(data.basket);}}
+try{yaCounter1067243.reachGoal('cart_add_goods');}catch(e){}
+try{yaCounter1067243.reachGoal('cart_add_set');}catch(e){}
+if(typeof VK==="undefined"){jQuery(document).on('vk_retargeting_init',function(){try{VK.Retargeting.Event('AddToCart');}catch(e){}});}else{try{VK.Retargeting.Event('AddToCart');}catch(e){}}
+try{fbq('track','AddToCart');}catch(e){}
+try{dataLayer.push({'event':'gaEvent','eventCategory':'cart','eventAction':'add_goods'});}catch(e){}
+try{dataLayer.push({'event':'gaEvent','eventCategory':'cart','eventAction':'add_set'});}catch(e){}
+try{dataLayer.push({'event':'addToCart','ecommerce':{'add':{'products':data.goodsJSON}}});}catch(e){}
+try{__AtmUrls=window.__AtmUrls||[];__AtmUrls.push('https://oz.by/add-to-cart');}catch(e){}}},'json');});});}(jQuery));;

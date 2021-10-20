@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){jQuery('.card-section__social').aim({dropPosition:"below",closestItem:'.card-section__social__li',itemsSelector:".card-section__social__item--drop",activeClass:'card-section__social__li--active',delayShow:150,delayHide:250,click:true});});;
